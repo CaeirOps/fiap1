@@ -1,0 +1,5 @@
+hosts: allhosts
+tasks:
+  - name: Deploy Container
+    command: 'docker run -dit -p 5000:5000 coredevops:latest'
+become: yes
